@@ -86,6 +86,7 @@
         npun=0;
         GMaps.geolocate({
           success: function(position){
+	    alert('exito');
             if( ruta.length==0){//si no tenemos ruta
             	lat = position.coords.latitude ;  // guarda coords en lat y lng
             	lng = position.coords.longitude;
