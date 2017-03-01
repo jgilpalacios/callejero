@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="org.mooc.Callejero" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="org.mooc.Callejero" version="1.0.1">
   <name>Callejero</name>
   <description>Creando rutas</description>
   <author href="http://www.agiselao.net16.net/miweb" email="juan@agiselao.net16.net">JG</author>
@@ -6,6 +6,7 @@
   
   <preference name="permissions" value="none"/>
   <preference name="phonegap-version" value="cli-6.5.0" />
+  <feature name="http://api.phonegap.com/1.0/network" />
   <preference name="orientation" value="default"/>
   <preference name="target-device" value="universal"/>
   <preference name="fullscreen" value="true"/>
