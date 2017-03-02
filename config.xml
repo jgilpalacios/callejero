@@ -23,6 +23,8 @@
   <preference name="android-installLocation" value="auto"/>
 
     <access origin="*"></access>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
 
     <gap:plugin name="cordova-plugin-battery-status" source="npm" />
     <gap:plugin name="cordova-plugin-camera" source="npm"/>
