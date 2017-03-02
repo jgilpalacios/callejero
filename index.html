@@ -86,6 +86,7 @@
         npun=0;
         GMaps.geolocate({
           success: function(position){
+            $("#map").html('exito');
 	    alert('exito');
             if( ruta.length==0){//si no tenemos ruta
             	lat = position.coords.latitude ;  // guarda coords en lat y lng
@@ -108,8 +109,8 @@
             });
             regeneraRuta(0);
           },
-          error: function(error) { alert('Geolocalización falla: '+error.message); },
-          not_supported: function(){ alert("Su navegador no soporta geolocalización"); },
+          error: function(error) { $("#map").html('error');alert('Geolocalización falla: '+error.message); },
+          not_supported: function(){$("#map").html('no sportado'); alert("Su navegador no soporta geolocalización"); },
         });
       };
       
