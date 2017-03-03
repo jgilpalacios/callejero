@@ -18,9 +18,15 @@
   <script type="text/javascript">
     var map, lat, lng, latIN, lngIN, npun, ruta=[], modoIR='driving';//'walking';
     function situame(){ //alert('se entra');
+	 var icono;
+	 if (modoIR==='driving'){
+		icono='coche.svg';
+	}else{
+		icono='peaton.svg';
+	}
 	GMaps.geolocate({
           success: function(position){
-		map.addMarker({ lat:position.coords.latitude, lng: position.coords.longitude, icon:"peaton.svg"})},
+		map.addMarker({ lat:position.coords.latitude, lng: position.coords.longitude, icon:icono})},
           error: function(error) { alert('Geolocalización falla: '+error.message); },
           not_supported: function(){ alert("Su navegador no soporta geolocalización"); }
 	});
